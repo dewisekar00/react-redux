@@ -1,15 +1,20 @@
 import './App.css';
 import FavoriteBook from './components/favoriteBook';
 import AllBook from './components/AllBook';
-import { Link } from 'react-router-dom';
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 
 function App() {
 
   return (
     <>
-       <Link to="/all-book">All Book</Link>
-   < AllBook />
-   < FavoriteBook />
+     
+ < BrowserRouter>
+ < Link to="/favorite-book">Favorite</Link>
+ <Routes>
+  <Route path='/all-book' element={ <AllBook/>}/>
+  < Route path='/favorite-book' element={< FavoriteBook/>} />
+ </Routes>
+ </BrowserRouter>
     
     </>
   );

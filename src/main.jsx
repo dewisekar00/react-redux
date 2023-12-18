@@ -11,28 +11,28 @@ import AllBook from './components/AllBook.jsx';
 const root = createRoot(document.getElementById('root'));
 
 
-const router = createBrowserRouter([
+// const router = createBrowserRouter([
 
-  {
-    path: "/",
-    element: < Home/>,
-  },
-  {
-    path: "/fav-book",
-    element: < FavoriteBook/>,
-  },
-  {
-    path: "/all-book",
-    element: < AllBook/>,
-  },
+//   {
+//     path: "/",
+//     element: < Home/>,
+//   },
+//   {
+//     path: "/fav-book",
+//     element: < FavoriteBook/>,
+//   },
+//   {
+//     path: "/all-book",
+//     element: < AllBook/>,
+//   },
 
-]);
+// ]);
 
 
 root.render(
   <Provider store={store}>
-  <RouterProvider router={router} >
+  {/* <RouterProvider router={router} > */}
     <App />
-  </RouterProvider>
+  {/* </RouterProvider> */}
   </Provider>
 );
